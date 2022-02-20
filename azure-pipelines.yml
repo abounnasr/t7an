@@ -7,7 +7,9 @@ trigger:
 - main
 
 pool:
-  name:ayoub
+  name: ayoub
+  demands:
+   - agent.name -equals ayoubagent  
 
 steps:
 - script: echo Hello, world!
